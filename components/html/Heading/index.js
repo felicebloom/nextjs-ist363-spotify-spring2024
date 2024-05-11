@@ -7,9 +7,9 @@ const Heading = ({
   children,
   level,
   marginTop,
+  marginRight,
   marginBottom,
   marginLeft,
-  marginRight,
 }) => {
   const Tag = `h${level}`;
 
@@ -17,8 +17,8 @@ const Heading = ({
     heading: true,
     [`heading--${level}`]: level,
     [`margin-top--${marginTop}`]: marginTop,
-    [`margin-bottom--${marginBottom}`]: marginBottom,
     [`margin-right--${marginRight}`]: marginRight,
+    [`margin-bottom--${marginBottom}`]: marginBottom,
     [`margin-left--${marginLeft}`]: marginLeft,
   });
 
