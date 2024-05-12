@@ -114,3 +114,13 @@
     }
   }
 }
+
+@mixin generateTextAlignClasses() {
+  $values: left, right, center;
+
+  @each $value in $values {
+    &.text-align--#{$value} {
+      text-align: $value;
+    }
+  }
+}

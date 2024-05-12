@@ -18,6 +18,10 @@ export async function GET() {
       name: "Ariana Grande",
       spotify_id: "66CXWjxzNUsdJxJ2JdwvnR",
     },
+    {
+      name: "Declan Mckenna",
+      spotify_id: "4sNG6zQBmtq7M8aeeKJRMQ",
+    },
   ];
 
   const artistsIds = artists.map((artist) => artist.spotify_id);

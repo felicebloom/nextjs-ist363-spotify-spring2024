@@ -1,3 +1,5 @@
+@use "../../../sass/abstracts/vars";
+
 .header {
   //background-color: lightblue;
   height: 7rem;
@@ -6,4 +8,8 @@
   text-align: center;
   position: relative;
   z-index: 2;
+  margin-bottom: 10rem;
+  @include mixins.breakpoint(laptop) {
+    margin-bottom: 0;
+  }
 }
